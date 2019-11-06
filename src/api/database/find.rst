@@ -176,13 +176,15 @@ documents whose "director" field has the value "Lars von Trier".
 
 .. code:: json
 
-    "selector": {
-      "$text": "Bond"
-    },
-    "fields": [
-      "title",
-      "cast"
-    ]
+    {
+        "selector": {
+            "$text": "Bond"
+        },
+        "fields": [
+            "title",
+            "cast"
+        ]
+    }
 
 You can create more complex selector expressions by combining operators.
 For best performance, it is best to combine 'combination' or
